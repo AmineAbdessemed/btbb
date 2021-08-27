@@ -1,0 +1,14 @@
+{
+  "name": "btbb",
+  "version": "1.0.0",
+  "description": "Script that finds the number of bitcoin blocks mined more than 2 hours apart from each other",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Amine Abdessemed",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/bigquery": "^5.8.0"
+  }
+}
