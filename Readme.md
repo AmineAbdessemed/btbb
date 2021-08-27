@@ -7,8 +7,8 @@ Script that finds the number of bitcoin blocks mined more than 2 hours apart fro
 
 Node.js ^ 14.17.5
 GCP service account key with the following persmissions.
-⋅⋅*BigQuery Data Viewer.
-⋅⋅*BigQuery Job User.
++BigQuery Data Viewer.
++BigQuery Job User.
 
 ###
 
@@ -18,8 +18,8 @@ GCP service account key with the following persmissions.
 
 ## Configure app
 
-⋅⋅*Copy the service key in the directory root.
-⋅⋅*Change SERVICE_KEY_PATH for the path of your service account key in the index.js file.
++Copy the service key in the directory root.
++Change SERVICE_KEY_PATH for the path of your service account key in the index.js file.
 
 ## Running the project
 
