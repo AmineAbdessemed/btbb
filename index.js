@@ -33,10 +33,14 @@ async function query() {
   console.log("[INFO] : Job done, looking for 2H+ occurences.")
   let numOfOccurences = 0;
   for(let i=1;i<rows.length;i++){
-    let timeDif = rows[i].timestamp-rows[i-1].timestamp;
+    const blockNextTs = rows[i].timestamp;
+    const blockLastTs = rows[i-1].timestamp;
+    const blockNextId = rows[i].number;
+    const blockLastId = rows[i-1].number;
+    const timeDif = blockNextTs-blockLastTs;
     if(timeDif>7200){
       numOfOccurences++;
-      console.log("2H+ between blocks",rows[i-1].number,rows[i].number,"Time Between(s)",timeDif);
+      console.log("2H+ between blocks",blockLastId,blockNextId,"Time Between(s)",timeDif);
     }
   }
   console.log("Total number of 2H+ occurences is",numOfOccurences)
